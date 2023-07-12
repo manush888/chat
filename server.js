@@ -1,3 +1,9 @@
+app.use((req, res, next) => {
+  res.setHeader('Permissions-Policy', 'interest-cohort=()');
+  next();
+});
+
+
 const express = require('express');
 const app = express();
 const http = require('http').createServer(app);
