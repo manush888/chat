@@ -1,3 +1,6 @@
+// Update the Socket.IO connection URL
+const socket = io('https://manush888.github.io/chat/public/');
+
 document.addEventListener('DOMContentLoaded', () => {
   const socket = io();
 
